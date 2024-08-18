@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinncon Key Gen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-selector">
+        <button id="langTR" class="lang-button">Türkçe</button>
+        <button id="langEN" class="lang-button">English</button>
+    </div>
+    <div class="container">
+        <div class="header">Hamster Key Generator</div>
+        <div class="game-buttons">
+            <button class="game-button" data-game="1">Riding Extreme 3D</button>
+            <button class="game-button" data-game="2">Chain Cube 2048</button>
+            <button class="game-button" data-game="3">My Clone Army</button>
+            <button class="game-button" data-game="4">Train Miner</button>
+            <button class="game-button" data-game="5">Merge Away</button>
+            <button class="game-button" data-game="6">Twerk Race</button>
+        </div>
+        <div class="button-container">
+            <button id="startBtn" class="button">Get Keys</button>
+            <button id="copyAllBtn" class="button hidden">Copy All Keys</button>
+        </div>
+        
+        <div id="keyContainer" class="key-container hidden">
+            <div id="keysList"></div>
+        </div>
+        <div class="progress-container hidden">
+            <div id="progressBar" class="progress-bar"></div>
+            <span id="progressText" class="progress-text">0%</span>
+        </div>
+        <div id="waitMessage" class="hidden">Kod üretim süreci devam ediyor. Lütfen bekleyin...</div>
+        <div id="completionMessage" class="hidden"></div>
+    </div>
+	<div id="warningWrapper">
+        <div id="warningMessage" class="warning-message hidden">
+            %100 olsa bile biraz beklemeniz gerekir.<br>
+            Yaklaşık 10 dakika bekleme süresi var.<br>
+            Sebebi ise oyunların delay süresi arttırıldı.
+        </div>
+    </div>
+
+    <div class="footer-buttons">
+        <a href="https://t.me/Hamsterkeyduyuru" target="_blank">
+            <button class="footer-button">Channel</button>
+        </a>
+        <a href="https://t.me/cancincon" target="_blank">
+            <button class="footer-button">Admin</button>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

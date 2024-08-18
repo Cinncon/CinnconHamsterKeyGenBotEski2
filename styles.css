@@ -1,0 +1,249 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('icon.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(31, 38, 54, 0.8);
+}
+
+.container {
+    background: rgba(43, 43, 56, 0.8);
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgba(26, 26, 35, 0.7), -5px -5px 10px rgba(48, 48, 59, 0.7);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative; /* Ensure it can contain absolutely positioned children */
+}
+
+.language-selector {
+    position: absolute;
+    top: 10px; /* Or your desired value */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lang-button {
+    background: #37374a;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lang-button.selected {
+    background-color: #005a56;
+}
+
+.lang-button:hover {
+    background-color: #004d45;
+}
+
+.header {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Ensure to add Google Font link in your HTML <head> */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+.progress-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 15px;
+    background-color: #ff8c00;
+    border-radius: 8px;
+    transition: width 0.3s;
+}
+
+.progress-text {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.game-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.game-button {
+    background: #37374a;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+.game-button.selected {
+    background-color: #005a56;
+}
+
+.game-button:hover {
+    background-color: #004d45;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #008075;
+    color: #ffffff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005a56;
+}
+
+.key-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.key-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(43, 43, 56, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.key-item input {
+    flex-grow: 1;
+    margin: 8px;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.copyKeyBtn {
+    background-color: #008075;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.copyKeyBtn:hover {
+    background-color: #005e56;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-button {
+    background-color: #008075;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #005a56;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#waitMessage, #completionMessage {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Uyarı mesajı için stil ayarları */
+#warningWrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.warning-message {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    animation: blink 6s step-start 0s infinite;
+    max-width: 600px;
+    width: 90%;
+    line-height: 1.5; /* Satır yüksekliğini artırarak satır aralıklarını genişletir */
+}
+
+.warning-text {
+    margin: 0;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    83% { opacity: 1; } /* 5 saniye boyunca görünür */
+    84% { opacity: 0; } /* 1 saniye boyunca görünmez */
+    100% { opacity: 0; }
+}
