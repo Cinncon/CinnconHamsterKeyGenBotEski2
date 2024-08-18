@@ -3,7 +3,7 @@ const games = {
         name: 'Riding Extreme 3D',
         appToken: 'd28721be-fd2d-4b45-869e-9f253b554e50',
         promoId: '43e35910-c168-4634-ad4f-52fd764a843f',
-        eventDelay: 22000,
+        eventDelay: 21000,
         attemptCount: 22
     },
     2: {
@@ -17,7 +17,7 @@ const games = {
         name: 'My Clone Army',
         appToken: '74ee0b5b-775e-4bee-974f-63e7f4d5bacb',
         promoId: 'fe693b26-b342-4159-8808-15e3ff7f8767',
-        eventDelay: 70000,
+        eventDelay: 120000,
         attemptCount: 11
     },
     4: {
